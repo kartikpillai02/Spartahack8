@@ -134,7 +134,7 @@ cbs = [EarlyStopping(patience=3, restore_best_weights=True), ModelCheckpoint("Mo
 model.fit(
     X_train, y_train,
     validation_data=(X_valid, y_valid),
-    epochs=1,
+    epochs=15,
     callbacks=cbs
 )
 
